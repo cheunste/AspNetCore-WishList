@@ -23,6 +23,8 @@ namespace WishList
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
 
+            app.UseMvcWithDefaultRoute();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
